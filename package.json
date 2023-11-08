@@ -11,5 +11,10 @@
   "private": true,
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "fullpage.js": "^4.0.20",
+    "locomotive-scroll": "^4.1.4"
   }
+  
 }

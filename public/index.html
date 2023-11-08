@@ -1,20 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Temp</title>
 
-    <!-- CSS RESET -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Club Sushi</title>
+
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Locomotive Scroll -->
+  <link rel="stylesheet" href="/assets/css/locomotive.css" />
+  <!-- Glide -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css" integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Style.css -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
 
 </head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+
+<body data-scroll-container>
+
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  
+      <!-- Logo -->
+      <div class="container">
+        <a class="navbar-brand fs-4" href="#">
+          <object data="assets/images/Asset 4.svg"></object>
+        </a>
+  
+        <!-- Toggle -->
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Sidebar -->
+        <div class="sidebar offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  
+          <!-- header -->
+          <div class="offcanvas-header text-white border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Club Sushi</h5>
+            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"aria-label="Close"></button>
+          </div>
+  
+          <!-- body -->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+              <li class="nav-item mx-2">
+                <a class="nav-link px-2" aria-current="page" href="#">Hours & Location</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link px-2" href="#">Menus</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link px-2" href="#">About</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link px-2" href="#">Events</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link px-2" href="#">Order Online</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </nav>
+
+  </header>
+
+
+  <main>
+    <!-- HERO -->
+    <!-- Hero Img -->
+    <canvas class="hero" data-scroll-section id="canvas-image-blending"></canvas>
+    
+    <!-- Hero text -->
+    <div data-scroll-section class="hero-text">
+      <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="3">
+        <span>Welcome to Sushi Club.</span>
+        </br>
+        <span>We Bring Japan to Your Plate. </span>
+      </h2>
+      <!-- Btn -->
+      <h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="2">
+        <button class="action-btn">Reservations</button>
+      </h2>
+    </div>
+
+
+    <!-- SUSHI MENU -->
+    <section class="menu" data-scroll-section>
+
+      <!-- Menu Image Column -->
+      <div class="column">
+        <section class="bg-menu"  data-scroll data-scroll-speed="6"></section>
+      </div>
+
+      <!--Menu Links Column  -->
+      <div class="column">
+
+        <!-- Menu List -->
+        <section>
+            <ul>
+              <li>
+                <h1 data-scroll data-scroll-speed="4"> Our Menu</h1>
+              </li>
+              <li>
+                <h3 data-scroll data-scroll-class="appear" data-scroll-speed="1" class="custom-text"><a href="#">Sushi Rolls</a></h3>
+              </li>
+              <li>
+                <h3 data-scroll data-scroll-class="appear" data-scroll-speed="1" class="custom-text"><a href="#">Poke Bowls</a></h3>
+              </li>
+              <li>
+                <h3 data-scroll data-scroll-class="appear" data-scroll-speed="1" class="custom-text"><a href="#">Sides</a></h3>
+              </li>
+              <li>
+                <h3 data-scroll data-scroll-class="appear" data-scroll-speed="1" class="custom-text"><a href="#">Drinks</a></h3>
+              </li>
+              <li>
+                <h3 data-scroll data-scroll-class="appear" data-scroll-speed="1" class="custom-text"><a href="#">Deserts</a></h3>
+              </li>
+              <li>
+                <h3 data-scroll data-scroll-class="appear" data-scroll-speed="1" class="custom-text"><a href="#">All Menu</a></h3>
+              </li>
+            </ul>
+        </section>
+
+      </div>
+    </section>
+
+  </main>
+  
+
+  <!-- CAROUSEL -->
+  <section class="glide" data-scroll-section >
+
+    <div data-glide-el="track" class="glide__track">
+      <ul class="glide__slides">
+        <li class="glide__slide">
+          <img src="./assets/images/a1.jpg" />
+        </li>
+        <li class="glide__slide">
+          <img src="./assets/images/a2.jpg" />
+        </li>
+        <li class="glide__slide">
+          <img src="./assets/images/a3.jpg" />
+        </li>
+        <li class="glide__slide">
+          <img src="./assets/images/a1.jpg" />
+        </li>
+        <li class="glide__slide">
+          <img src="./assets/images/pexels-miguel-á-padriñán-932261.jpg" />
+        </li>
+      </ul>
+    </div>
+
+    <!-- Left right nav -->
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">⬅</button>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">➡</button>
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <!-- Store info -->
+    <ul data-scroll-section>
+      <li>
+        <object data-scroll-class="appear" class="custom-text" data-scroll data-scroll-speed="1" id="logo-svg"  type="image/svg+xml" data="assets/images/Asset 7.svg"></object>
+      </li>
+      <li>
+        <p data-scroll data-scroll-class="appear" class="custom-text">7539 Swanson Dr.</p>
+        <p data-scroll data-scroll-class="appear" class="custom-text">Wellington, ON N0B 3A7</p>
+      </li>
+      <li>
+        <p data-scroll data-scroll-class="appear" class="custom-text red">404-968-9563</p>
+      </li>
+      <li>
+        <p data-scroll data-scroll-class="appear" class="custom-text">www.clubsushi.com</p> 
+      </li>
+    </ul>
+
+  </footer>
+
+
+  <!-- SCRIPTS -->
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <!--Vivus  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.min.js" integrity="sha512-oUUeA7VTcWBqUJD/VYCBB4VeIE0g1pg5aRMiSUOMGnNNeCLRS39OlkcyyeJ0hYx2h3zxmIWhyKiUXKkfZ5Wryg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Granim -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js" integrity="sha512-CmlPTWm5+a1Gt2YSNk2rGZVvbH3Zge6imS7M4/vrhC8d+A1RcehmLxWMqUdv8aEu7pwfTo74EtnrR+8Cf8KdCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Glide -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js" integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Index.js -->
+  <script src="assets/js/index.js" type="module"></script>
 </body>
+
 </html>
